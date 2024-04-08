@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block Title %}
+    Users groupe
+{% endblock  %}
+
+{% block body %}
+    <div>
+    <h1>Liste Users</h1>
+    <ul>
+        {% for group in groupe %}
+        <li>
+        {{group.prenom}}
+        {{ group.nom}}
+        </li>
+        <li>
+            {{group.email}}</li>
+        <li>{{ group.profession }}</li><br>
+
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

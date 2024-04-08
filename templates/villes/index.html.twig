@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello VillesController!
+{% endblock %}
+
+{% block body %}
+<div>
+		<h1>
+			 Liste des villes </h1>
+
+		<ul>
+			{% for ville in villes %}
+				<li>{{ville.nom}}</li>
+			{% endfor %}
+		</ul>
+
+
+	</div>
+{% endblock %}

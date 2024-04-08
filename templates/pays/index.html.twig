@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pays{% endblock %}
+
+{% block body %}
+
+<div>
+    <h1> Liste des Pays  </h1>
+
+    <ul>
+    {% for country in pays %}
+       <li><a href="{{ path('pays_id', {id: country.id })}}">{{ country.nom }} </a></li>
+    {% endfor %}   
+    </ul>
+</div>
+{% endblock %}

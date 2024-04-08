@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Villes des pays{% endblock %}
+
+{% block body %}
+<div>
+    <h1>Les villes de {{pays.nom}}</h1>
+
+<ul>
+    {% for ville in pays.getVilles %}
+    <li>{{ville.nom }} </li>
+    {% endfor %}
+</ul>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Hello GroupeController!{% endblock %}
+
+{% block body %}
+
+<div>
+    <h1>Groupements:</h1>
+    <ul>
+    {% for groupe in groupe %}
+    <li><a href="{{ path('groupe_id', {id: groupe.id}) }}"> {{groupe.nom}}</a></li>
+
+    {% endfor %}
+    </ul>
+</div>
+{% endblock %}

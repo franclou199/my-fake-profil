@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MainController!{% endblock %}
+
+{% block body %}
+
+
+<div>
+    <h1> Création de faux profils</h1>
+
+    <h4>Les différents items</h4>
+
+    <ul>
+        <li><a href="{{path('app_pays')}}">Les pays</a></li>
+        <li><a href="{{path('app_villes')}}">Les villes</a></li>
+        <li><a href="{{path('app_utilisateurs')}}">Les utilisateurs</a></li>
+        <li><a href="{{path('app_groupe')}}">Les groupes d'utilisateurs</a></li>
+    
+    </ul>
+</div>
+{% endblock %}
