@@ -73,6 +73,7 @@ class AppFixtures extends Fixture
     $manager->flush();
     //t'as intérêt à fonctionner
     //ça envoie que dalle (14h02)
+    //FINNALEMENT FONCTIONNE (14h37)
 
 }
 }
